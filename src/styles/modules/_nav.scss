@@ -1,5 +1,4 @@
 nav {
-  /* background-color: transparent; */
   background-color: transparent;
   height: 100px;
   display: flex;
@@ -13,7 +12,6 @@ nav {
   font-size: 3rem;
   font-style: italic;
   font-weight: 800;
-  text-decoration: none;
   display: flex;
   align-items: baseline;
   padding-top: 10px;
@@ -34,6 +32,7 @@ nav {
   padding: 20px;
   top: 0;
   right: 0;
+  cursor: pointer;
 
   p {
     font-size: 1.2rem;
@@ -44,5 +43,70 @@ nav {
   i {
     font-size: 2rem;
     padding-top: 20px;
+  }
+}
+
+.sidebar {
+  background: $yellow;
+  height: 100%;
+  width: 350px;
+  display: grid;
+  align-items: flex-start;
+  top: 0;
+  right: -100%;
+  transition: $smooth;
+  position: fixed;
+  z-index: 999;
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+
+  &.active {
+    right: 0;
+    transition: $smooth;
+  }
+
+  &-close {
+    background: transparent;
+    font-size: 2rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+  }
+
+  &-menu {
+    margin-top: 80px;
+    text-align: center;
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      font-weight: 400;
+      padding-top: 40px;
+      a {
+        font-size: 1.3rem;
+        transition: $smooth;
+      }
+      a:hover {
+        color: $red;
+      }
+    }
+  }
+
+  &-order {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+    &-link {
+      color: $white;
+      background: $red;
+      padding: 16px 60px;
+      transition: $smooth;
+      &:hover {
+        background: $black;
+      }
+    }
   }
 }

@@ -1,21 +1,26 @@
 import "./styles/main.scss"
 import React from "react"
 import ReactDOM from "react-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import Hero from "./components/Hero"
-import { menuData, dessertData } from "./components/data"
+import { MenuDataMain, MenuDataDessert } from "./components/MenuData"
 import Menu from "./components/Menu"
 import Special from "./components/Special"
 import Footer from "./components/Footer"
 
 function App() {
   return (
-    <>
+    <Router>
       <Hero />
-      <Menu heading="Choose your favorite" data={menuData} />
-      <Special />
-      <Footer />
-    </>
+      <Switch>
+        <Route path="/">
+          <Menu heading="Choose your favorite" data={MenuDataMain} />
+          <Special />
+          <Footer />
+        </Route>
+      </Switch>
+    </Router>
   )
 }
 
