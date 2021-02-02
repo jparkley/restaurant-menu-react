@@ -6,13 +6,13 @@ function Footer() {
       <div className="footer-wrap">
         <div className="footer-wrap-social">
           <a href="/">
-            <i class="fab fa-facebook"></i>
+            <i className="fab fa-facebook"></i>
           </a>
           <a href="/">
-            <i class="fab fa-twitter-square"></i>
+            <i className="fab fa-twitter-square"></i>
           </a>
           <a href="/">
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </a>
         </div>
       </div>

@@ -9,7 +9,7 @@ import beefJoonla from "../../public/img/beefJoonla.jpg"
 import riceBrownie from "../../public/img/riceBrownie.jpg"
 import marbleCake from "../../public/img/marbleCake.jpg"
 
-export const menuData = [
+export const MenuDataMain = [
   {
     id: 1,
     name: "Crescent Mandu",
@@ -76,7 +76,7 @@ export const menuData = [
   }
 ]
 
-export const dessertData = [
+export const MenuDataDessert = [
   {
     id: 9,
     name: "Ricerownie",
