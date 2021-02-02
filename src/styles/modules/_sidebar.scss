@@ -1,0 +1,55 @@
+.sidebar {
+  background: $yellow;
+  height: 100%;
+  width: 350px;
+  display: grid;
+  align-items: flex-start;
+  top: 0;
+  right: 0px;
+  transition: $smooth;
+  position: fixed;
+  z-index: 999;
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+
+  &__icon {
+    background: transparent;
+    font-size: 2rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+  }
+
+  &__menu {
+    margin-top: 80px;
+    text-align: center;
+    h1 {
+      font-weight: 400;
+      padding-top: 30px;
+    }
+    a {
+      font-size: 1.5rem;
+      transition: $smooth;
+    }
+    a:hover {
+      color: $red;
+    }
+  }
+
+  &__order {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__order-link {
+    color: $white;
+    background: $red;
+    padding: 16px 60px;
+    transition: $smooth;
+    &:hover {
+      background: $black;
+    }
+  }
+}

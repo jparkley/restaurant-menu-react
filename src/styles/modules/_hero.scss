@@ -1,0 +1,49 @@
+.hero {
+  //   background: linear-gradient(to right, rbga(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1), url($heroImg));
+  background-image: url($heroImg);
+  background-position: center;
+  background-size: cover;
+  &-content {
+    height: calc(100vh - 80px);
+    max-height: 100%;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    width: 100vw;
+    overflow: hidden;
+  }
+  &-items {
+    color: $white;
+    font-weight: bold;
+    line-height: 1;
+    height: 100vh;
+    max-height: 100%;
+    padding: 0 2rem;
+    width: 550px;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+  }
+
+  &-title {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    box-shadow: 3px 5px $turboYellow;
+    margin-bottom: 1rem;
+    @media (max-width: 650px) {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  &-subtitle {
+    font-size: 2rem;
+    margin: 0 auto 2rem 0;
+    text-transform: none;
+  }
+}

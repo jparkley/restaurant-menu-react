@@ -1,0 +1,26 @@
+.special {
+  background-image: url($specialImg);
+  background-position: center;
+  background-size: cover;
+  color: $black;
+  height: 100vh;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  // transform: translateY(-25%);
+
+  h1 {
+    font-size: clamp(3rem, 5vw, 5rem);
+  }
+
+  p {
+    background: $lightGray;
+    font-size: clamp(1rem, 3vw, 2rem);
+    margin-bottom: 2.5rem;
+    opacity: 0.7;
+  }
+}

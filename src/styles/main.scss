@@ -1,0 +1,38 @@
+$white: #fff;
+$yellow: #ffc500;
+$turboYellow: #e9ba23;
+$sand: #eccc68;
+$red: #e31837;
+$blackPearl: #150f0f;
+$blackHorse: #0d0909;
+$black: #000;
+$lightGray: #f1f2f6;
+
+$smooth: 0.3s ease-in-out;
+$heroImg: "../../public/img/hero.jpg";
+$specialImg: "../../public/img/featureMainCourse.jpg";
+
+@import "modules/_button";
+@import "modules/_nav";
+@import "modules/_sidebar";
+@import "modules/_hero";
+@import "modules/_menu";
+@import "modules/_special";
+@import "modules/_footer";
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}

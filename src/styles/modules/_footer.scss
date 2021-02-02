@@ -1,0 +1,37 @@
+.footer {
+  background-color: $blackHorse;
+
+  &-wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-social {
+      max-width: 240px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 16px auto 0 auto;
+      padding-bottom: 20px;
+
+      a {
+        color: $white;
+        font-size: 24px;
+      }
+    }
+  }
+
+  &-logo {
+    color: $white;
+    font-size: 0.95rem;
+    font-style: italic;
+    padding: 10px 0 30px 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
