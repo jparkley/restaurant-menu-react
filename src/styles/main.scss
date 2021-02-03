@@ -13,7 +13,7 @@ $heroImg: "../../public/img/hero.jpg";
 $specialImg: "../../public/img/featureMainCourse.jpg";
 
 @import "modules/_button";
-@import "modules/_nav";
+@import "modules/_navbar";
 @import "modules/_hero";
 @import "modules/_menu";
 @import "modules/_special";
@@ -24,6 +24,8 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 a {
